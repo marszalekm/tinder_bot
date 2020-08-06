@@ -19,12 +19,12 @@ def convert_to_face(input, output):
         pil_image.save(output)
 
 
-folder = "./Females/"
-faces = "./Faces/"
+input = "./raw_images/female/"
+output = "./training_images/female/"
 
-for filename in os.listdir(folder):
+for filename in os.listdir(input):
     print("Finding face for: ", filename)
-    output = filename.split('.')[0] + '-face.' + filename.split('.')[1]
-    convert_to_face(folder + filename, faces + output)
+    file_output = filename.split('.')[0] + '-face.' + filename.split('.')[1]
+    convert_to_face(input + filename, output + file_output)
     torch.cuda.empty_cache()
 
