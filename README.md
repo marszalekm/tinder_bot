@@ -3,7 +3,7 @@ Bot that automatically browse and chooses women in Tinder, based on NN.
 
 # WORK IN PROGRESS !
 
-Overall plan (it is being evaluated during production)
+Overall plan (it is evaluated during production)
 
 - [x] Implementataion of face recognition for the purposes of the project.
 - [X] Collection of images for training + images processing, transformation etc.
